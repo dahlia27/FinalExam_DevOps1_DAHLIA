@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     // Deploy to Firebase Testing environment using Webhook
-                    sh 'firebase use --add FinalExam_Testing_YourName'
+                    sh 'firebase use --add FinalExam_Testing_DAHLIA'
                     sh 'firebase deploy --only hosting --token $FIREBASE_TOKEN'
                 }
             }
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     // Deploy to Firebase Staging environment using Webhook
-                    sh 'firebase use --add FinalExam_Staging_YourName'
+                    sh 'firebase use --add FinalExam_Staging_DAHLIA'
                     sh 'firebase deploy --only hosting --token $FIREBASE_TOKEN'
                 }
             }
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
                     // Deploy to Firebase Production environment using Webhook
-                    sh 'firebase use --add FinalExam_Production_YourName'
+                    sh 'firebase use --add FinalExam_Production_DAHLIA'
                     sh 'firebase deploy --only hosting --token $FIREBASE_TOKEN'
                 }
             }
